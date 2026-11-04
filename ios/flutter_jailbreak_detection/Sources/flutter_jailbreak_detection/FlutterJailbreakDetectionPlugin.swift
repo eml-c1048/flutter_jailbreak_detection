@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 import IOSSecuritySuite
-public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
+public class FlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "flutter_jailbreak_detection", binaryMessenger: registrar.messenger())
-    let instance = SwiftFlutterJailbreakDetectionPlugin()
+    let instance = FlutterJailbreakDetectionPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
